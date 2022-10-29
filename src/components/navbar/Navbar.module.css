@@ -1,0 +1,134 @@
+.navbar {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #EFEFEF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__select {
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--brown);
+    font-weight: 700;
+}
+
+.nav__select>option {
+    color: var(--dark-blue);
+}
+
+.pages>ul {
+    gap: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: black;
+}
+
+.Link {
+    font-weight: 500;
+    color: var(--black);
+}
+
+.Link:hover {
+    color: var(--dark-blue);
+}
+
+.nav__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__input>input {
+    width: 330px;
+    height: 35px;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 47px;
+    border: 2px solid var(--dark-blue);
+}
+
+.nav__input>input::placeholder {
+    color: var(--dark-blue);
+}
+
+.imput__icons {
+    color: var(--brown);
+    margin: 0 10px 0 -30px;
+}
+
+@media (max-width: 1370px) {
+    .nav__input>input {
+        width: 230px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .Link {
+        display: none;
+    }
+
+    .pages>ul {
+        gap: 0;
+    }
+
+    .navbar {
+        height: 100px;
+        padding: 0;
+    }
+
+    .nav__select {
+        width: 954px;
+        height: 100px;
+        font-size: 3rem;
+        color: var(--white);
+        padding: 0 30px;
+        background-color: var(--red);
+    }
+
+    .nav__input {
+        width: 50%;
+        height: 100px;
+
+    }
+
+    .nav__input>input {
+        width: 100%;
+        height: 100px;
+        color: var(--white);
+        border: none;
+        border-radius: 0;
+        font-size: 2rem;
+        background-color: var(--dark-blue);
+    }
+
+    .nav__input>input::placeholder {
+        text-align: center;
+        color: var(--white);
+    }
+
+    .imput__icons {
+        font-size: 2rem;
+        color: var(--white);
+        margin: 0 47px 0 -80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav__select {
+        width: 770px;
+        height: 100px;
+        background-color: var(--red);
+    }
+}

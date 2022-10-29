@@ -1,0 +1,98 @@
+.section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.about{
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about > img{
+    width: 120px;
+    border: 1px solid var(--gray);
+}
+
+.model{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.model > p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--gray);
+}
+
+.model > p > span{
+    color: var(--black);
+}
+
+.model > button{
+    margin-top: 30px;
+    width: 150px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.model > button:hover{
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.colors > p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+
+.colors > p > span{
+    color: var(--black);
+}
+
+.radio{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc{
+    gap: 50px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.inc__dec {
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--black);
+}
+
+.inc__dec>p {
+    display: flex;
+    min-width: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inc__dec__icons {
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-sizing: content-box;
+}

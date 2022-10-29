@@ -1,0 +1,51 @@
+
+.radio-img > img {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+
+
+li{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox__img {
+    width: 40px;
+    border-radius: 50%;
+    /* border: 0.2px solid gray; */
+    box-shadow: 0 6px 10px rgb(0 0 0 / 50%);
+}
+
+.input {
+    display: none;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+}
+
+.label {
+    position: absolute;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:checked+.label:before {
+    width: 20px;
+    height: 20px;
+    content: "✓";
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(254, 254, 254);
+    box-shadow: 0 6px 10px rgb(0 0 0 / 80%);
+}

@@ -1,0 +1,33 @@
+.select__app {
+    appearance: none;
+    outline: 0;
+    border: 0;
+    flex: 1;
+    padding: 0 1em;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 80px;
+    border-radius: .25em;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.152);
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding:30px;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    color: #f39c12;
+}
